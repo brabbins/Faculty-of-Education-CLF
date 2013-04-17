@@ -1,4 +1,4 @@
-/* Edited David Brabbins April 12, 2013 */
+/* Edited David Brabbins April 17, 2013 */
 /* Style Sheet Categories */
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
@@ -892,9 +892,9 @@ ul.thumbnails img {
   /*----------------------------------------- Top Navigation*/
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar .tab-pane {
-    min-height: 300px;
-    max-height: 300px;
+  #frontpage-siderbar .tab-content {
+    min-height: 343px;
+    max-height: 343px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
@@ -970,9 +970,9 @@ ul.thumbnails img {
   }
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar .tab-pane {
-    min-height: 350px;
-    max-height: 350px;
+  #frontpage-siderbar .tab-content {
+    min-height: 388px;
+    max-height: 388px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
@@ -1013,9 +1013,9 @@ ul.thumbnails img {
   /*----------------------------------------- Top Navigation*/
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar .tab-pane {
-    min-height: 440px;
-    max-height: 440px;
+  #frontpage-siderbar .tab-content {
+    min-height: 456px;
+    max-height: 456px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
