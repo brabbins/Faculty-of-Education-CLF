@@ -151,8 +151,9 @@ ul.nav {
   box-shadow: none;
 }
 #frontpage-siderbar .tab-content {
-  max-height: auto;
-  min-height: auto;
+  height: 340px;
+  max-height: 340px;
+  min-height: 340px;
 }
 #frontpage-siderbar .tab-pane {
   max-height: auto;
@@ -893,6 +894,7 @@ ul.thumbnails img {
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
   #frontpage-siderbar .tab-content {
+    height: 343px;
     min-height: 343px;
     max-height: 343px;
   }
@@ -971,6 +973,7 @@ ul.thumbnails img {
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
   #frontpage-siderbar .tab-content {
+    height: 388px;
     min-height: 388px;
     max-height: 388px;
   }
@@ -1014,6 +1017,7 @@ ul.thumbnails img {
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
   #frontpage-siderbar .tab-content {
+    height: 456px;
     min-height: 456px;
     max-height: 456px;
   }
