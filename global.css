@@ -603,10 +603,6 @@ ul.thumbnails img {
   float: none:
 		clear:both;
 }
-.thumbnails .row-fluid [class*="span"] h2 {
-  font-size: 24px;
-  line-height: 1.3;
-}
 /*----------------------------------------- @Media | Responsive Design ----------------------------------------------------------*/
 @media (min-width: 767px) {
   /*----------------------------------------- Primary Styles*/
@@ -732,6 +728,13 @@ ul.thumbnails img {
   .thumbnails .row-fluid .span4 {
     min-height: 350px;
     max-height: 380px;
+  }
+  .thumbnails .row-fluid .span1 h2,
+  .thumbnails .row-fluid .span2 h2,
+  .thumbnails .row-fluid .span3 h2,
+  .thumbnails .row-fluid .span4 h2 {
+    font-size: 24px;
+    line-height: 1.3;
   }
   .thumbnails .row-fluid .span5,
   .thumbnails .row-fluid .span6 {
