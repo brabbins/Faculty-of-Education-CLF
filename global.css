@@ -258,6 +258,20 @@ h1.category-title {
 .sidenav .single > .opened .ubc7-arrow {
   background-position: -1113px -227px !important;
 }
+.sidenav .accordion-inner,
+.sidenav .accordion-inner a:last-child {
+  border-bottom: none;
+}
+.sidenav .accordion-inner .accordion-inner a:last-child {
+  border-bottom: none;
+}
+.sidenav .accordion-inner .accordion-inner a:first-child {
+  border-top: none;
+}
+.sidenav .accordion-inner .accordion-inner a,
+.sidenav .accordion-inner .accordion-inner .accordion-inner .accordion-inner a {
+  border-bottom: 1px solid #D7E0E7;
+}
 .sidenavigation .accordion-group .accordion-heading.active,
 .sidenavigation .accordion-group .accordion-heading.active a,
 .sidenavigation .accordion-group .accordion-heading.active .accordion-toggle,
@@ -951,12 +965,11 @@ ul.thumbnails img {
   #ubc7-unit-menu .nav > li.active > a,
   #ubc7-unit-alternate-navigation .nav > li.active > a,
   #ubc7-unit-menu .nav > li.active > .btn-group,
-  #ubc7-unit-menu .current-page-ancestor,
   .current-menu-ancestor,
   .current-menu-parent,
   .current-page-parent,
   .current_page_parent,
-  .current_page_ancestor {
+  #ubc7-unit-menu .current-page-ancestor {
     background: #eaeaea;
     background: -moz-linear-gradient(top, #eaeaea 0%, #d6d6d6 49%, #e5e5e5 50%, #f2f2f2 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaea), color-stop(49%, #d6d6d6), color-stop(50%, #e5e5e5), color-stop(100%, #f2f2f2));
@@ -969,6 +982,14 @@ ul.thumbnails img {
     -moz-box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.5);
     box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.5);
     color: #002145;
+  }
+  #ubc7-unit-menu .current-page-ancestor .current-page-ancestor {
+    background-color: #d7e0e7!important;
+    background-image: none;
+    color: #002145;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/

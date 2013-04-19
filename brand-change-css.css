@@ -1,0 +1,35 @@
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #container .hero-unit h1, #frontpage-siderbar .tab-pane a {
+ color: #!important;
+}
+.simple-custom-menu .active a, .simple-custom-menu a:hover, .sidenav a:hover, .sidenav .accordion-heading:hover, .sidenav .accordion-heading .accordion-toggle:hover, #ubc7-carousel .carousel-caption, .ubc-carousel .carousel-caption, #ubc7-carousel-controller, .ubc7-carousel-controller, #ubc7-unit-
+menu .nav-collapse .nav > li > a:hover, #ubc7-unit-menu .nav-collapse .dropdown-menu a:hover, #ubc7-unit-alternate-navigation .nav-collapse .nav > li > a:hover, #ubc7-unit-alternate-navigation .nav-collapse .dropdown-menu a:hover, #ubc7-unit-menu .btn-group:hover .btn, #ubc7-unit-menu .nav > li.active > .btn-group:hover .btn, #ubc7-unit-alternate-navigation .nav > li.active > .btn-group:hover .btn, #ubc7-unit-alternate-navigation .btn-group:hover .btn, #ubc7-unit-menu .nav-collapse .nav>li>a:hover, .accordion.sidenav .single a.opened, #frontpage-siderbar .nav-tabs>li>a, .nav-tabs>li>a, #content .accordion-group .accordion-heading a:hover {
+ background: #!important;
+}
+#frontpage-siderbar .nav-tabs>li.active>a, .nav-tabs>li.active>a {
+	background: #!important;
+        border: 1px solid #;
+}
+#content a[href$='.pdf']:after, #content a[href$='.doc']:after, #content a[href$='.docx']:after {
+font-family: FontAwesome;
+content: "\f0f6";
+padding-left: 7px;
+}
+#content a[href^='mailto:']:after {
+font-family: FontAwesome;
+content: "\f003";
+padding-left: 7px;
+}
+#dept-brand {
+	background: #;
+}
+#department-logo {
+	background-image: url(/files/2013/04/ogpr-chevron.png);
+}
+ @media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+#container, .content, #frontpage-siderbar {
+	background: url(/files/2013/04/debut_light_@2X.png) repeat !important;
+}
+#department-logo {
+	background-image: url(/files/2013/04/ogpr-chevron@2x.png);
+}
+}

@@ -225,6 +225,19 @@ h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-titl
 .sidenav .single > .opened .ubc7-arrow {
  background-position: -1113px -227px!important;
 }
+.sidenav .accordion-inner, .sidenav .accordion-inner a:last-child {
+border-bottom: none;
+}
+
+.sidenav .accordion-inner .accordion-inner a:last-child {
+border-bottom: none;
+}
+.sidenav .accordion-inner .accordion-inner a:first-child {
+border-top: none;
+}
+.sidenav .accordion-inner .accordion-inner a, .sidenav .accordion-inner .accordion-inner .accordion-inner .accordion-inner  a {
+border-bottom: 1px solid #D7E0E7;
+}
 .sidenavigation .accordion-group .accordion-heading.active, .sidenavigation .accordion-group .accordion-heading.active a, .sidenavigation .accordion-group .accordion-heading.active .accordion-toggle, .accordion.sidenav .single a.opened {
 	background: #2F5D7C;
 	color: #F9F9F9;
@@ -233,6 +246,7 @@ h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-titl
 .sidenavigation .accordion-group .accordion-body .accordion-inner > a {
 	line-height: 1.6;
 }
+
 .l2-column-ms #primary-secondary {
 margin-top: 0;
 }
@@ -937,7 +951,7 @@ ul .thumbnail {
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0 );
 }
-#ubc7-unit-menu .nav > li.active > a, #ubc7-unit-alternate-navigation .nav > li.active > a, #ubc7-unit-menu .nav > li.active > .btn-group, #ubc7-unit-menu .current-page-ancestor, .current-menu-ancestor, .current-menu-parent, .current-page-parent, .current_page_parent, .current_page_ancestor {
+#ubc7-unit-menu .nav > li.active > a, #ubc7-unit-alternate-navigation .nav > li.active > a, #ubc7-unit-menu .nav > li.active > .btn-group, .current-menu-ancestor, .current-menu-parent, .current-page-parent, .current_page_parent, #ubc7-unit-menu .current-page-ancestor {
 	background: rgb(234,234,234);
 	background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(214,214,214,1) 49%, rgba(229,229,229,1) 50%, rgba(242,242,242,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(234,234,234,1)), color-stop(49%, rgba(214,214,214,1)), color-stop(50%, rgba(229,229,229,1)), color-stop(100%, rgba(242,242,242,1)));
@@ -950,6 +964,14 @@ ul .thumbnail {
 	-moz-box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.5);
 	box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.5);
 	color: #002145;
+}
+#ubc7-unit-menu .current-page-ancestor .current-page-ancestor, {
+	background-color: #d7e0e7!important;
+	background-image: none;
+	color: #002145;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 /*----------------------------------------- Front Page*/
