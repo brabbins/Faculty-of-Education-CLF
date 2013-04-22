@@ -1,4 +1,4 @@
-/* Edited David Brabbins April 17, 2013 */
+/* Edited David Brabbins April 22, 2013 */
 /* Style Sheet Categories */
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
@@ -104,7 +104,6 @@ ul.nav {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-
 .home .dean-specific {
 	width: auto;
 	word-wrap: break-word !important;
@@ -126,11 +125,13 @@ ul.nav {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	overflow: auto;
 	
 	.tab-content {
-		height: 340px;
-		max-height: 340px;
-		min-height: 340px;
+		height: 320px;
+		max-height: 320px;
+		min-height: 320px;
+		overflow: auto;
 	}
 	
 	.tab-pane {
@@ -146,12 +147,28 @@ ul.nav {
 		margin-top: 0;
 	}
 }
-.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
+.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar .tab-content, .home-layout-option2 #frontpage-siderbar {
 	.tab-content, .tab-pane {
 		min-height: auto!important;
 		max-height: auto!important;
-		overflow: visible!important;
+		overflow: visible;
 	}
+}
+.home-layout-option5 #frontpage-siderbar, .home-layout-option3 #frontpage-sidebar, .home-layout-option2 #frontpage-siderbar {
+	margin-top: 0!important;
+	padding: 0!important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	position: static;
+	background: none;
+}
+.home-layout-option5 #frontpage-siderbar, .home-layout-option5 #frontpage-siderbar .tab-content, .home-layout-option3 #frontpage-siderbar .tab-content, .home-layout-option2 #frontpage-siderbar .tab-content {
+	overflow: visible!important;
+}
+.l1-column.home-layout-option5 .hentry.page, .home.home-layout-option5 #content, .home.l2-column-sm.l2-column #content, .home.l2-column-sm.l2-column.home-layout-option2 #content, .home.home-layout-option2 #content, .home.home-layout-option1 #content, .home.home-layout-option1 .hentry.page {
+	 margin: 0;
+	 padding: 0;
 }
 
 #my-carousel {
@@ -655,7 +672,7 @@ ul.thumbnails {
 	width: 60%;
 }
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-.home #content {
+.home #content, .home.l2-column-sm.l2-column.home-default #content {
 	margin: -45px 0 0 0;
 	padding: 10px 20px 0 20px;
 }
@@ -897,10 +914,16 @@ border-bottom: 1px solid #CCC;
 /*----------------------------------------- Top Navigation*/
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 /*----------------------------------------- Front Page*/
-#frontpage-siderbar .tab-content {
-	height: 343px;
-	min-height: 343px;
-	max-height: 343px;
+#frontpage-siderbar {
+	height: 400px;
+	min-height: 400px;
+	max-height: 400px;
+	
+	 .tab-content {
+		height: 310px;
+		min-height: 310px;
+		max-height: 310px;
+	}
 }
 .home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
 	.tab-content, .tab-pane {
@@ -976,10 +999,16 @@ ul .thumbnail {
 }
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 /*----------------------------------------- Front Page*/
-#frontpage-siderbar .tab-content {
-	height: 388px;
-	min-height: 388px;
-	max-height: 388px;
+#frontpage-siderbar {
+	height: 445px;
+	min-height: 445px;
+	max-height: 445px;
+	
+	 .tab-content {
+		height: 375px;
+		min-height: 375px;
+		max-height: 375px;
+	}
 }
 .home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
 	.tab-content, .tab-pane {
@@ -1022,10 +1051,16 @@ ul .thumbnail {
 /*----------------------------------------- Top Navigation*/
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 /*----------------------------------------- Front Page*/
-#frontpage-siderbar .tab-content {
-	height: 456px;
-	min-height: 456px;
-	max-height: 456px;
+#frontpage-siderbar {
+	height: 512px;
+	min-height: 512px;
+	max-height: 512px;
+	
+	 .tab-content {
+		height: 445px;
+		min-height: 445px;
+		max-height: 445px;
+	}
 }
 .home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
 	.tab-content, .tab-pane {
