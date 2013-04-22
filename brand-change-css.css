@@ -1,4 +1,51 @@
-/*Global color changes for header text, links, navigation, and Carousel*/
+/*
+THE SEVEN STEPS
+1. Regular background. Paste "background-image: background: link url();"
+2. Branding color and regular chevron background link
+3. Regular chevron. Paste "background-image: cheveron link url();"
+4. Retina Display versions of background and Chevron
+5. Retina background. Paste "background-image: background: link url();"
+6. Retina chevron. Paste images link in "background-image: link url(your-image-link-here);"
+7. Global color changes for header text, links, navigation, and Carousel
+
+*//*
+1. Regular background. Paste "background-image: background: link url();"
+*/
+#container, .content, #frontpage-siderbar {
+	background: url(/files/2013/04/debut_light.png) repeat !important;
+}
+/*
+2. Branding color and regular chevron background link
+*/
+#dept-brand {
+	background: #;
+}
+/*
+3. Regular chevron. Paste "background-image: cheveron link url();"
+*/
+#department-logo {
+	background-image: url(/files/2013/04/your-image-link-here.png);
+}
+/*
+4. Retina Display versions of background and Chevron
+*/
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+/*
+5. Retina background. Paste "background-image: background: link url();"
+*/
+#container, .content, #frontpage-siderbar {
+	background: url(/files/2013/04/debut_light_@2X.png) repeat !important;
+}
+/*
+6. Retina chevron. Paste images link in "background-image: link url(your-image-link-here);"
+*/
+#department-logo {
+	background-image: url(/files/2013/04/your-image-link-here@2x.png);
+}
+}
+/*
+7. Global color changes for header text, links, navigation, and Carousel
+*/
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #container .hero-unit h1, #frontpage-siderbar .tab-pane a {
  color: #!important;
 }
@@ -16,19 +63,3 @@ font-family: FontAwesome;
 content: "\f0f6";
 padding-left: 7px;
 }*/
-/*Branding Color and chevron background link*/
-#dept-brand {
-	background: #;
-}
-#department-logo {
-	background-image: url(/files/2013/04/ogpr-chevron.png);
-}
-/*Retina Display versions of background and Chevron*/
-@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
-#container, .content, #frontpage-siderbar {
-	background: url(/files/2013/04/debut_light_@2X.png) repeat !important;
-}
-#department-logo {
-	background-image: url(/files/2013/04/ogpr-chevron@2x.png);
-}
-}
