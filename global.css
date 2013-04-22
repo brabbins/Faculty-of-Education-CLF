@@ -149,12 +149,17 @@ ul.nav {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  overflow: auto;
+  overflow: hidden;
 }
-#frontpage-siderbar .tab-content {
-  height: 320px;
-  max-height: 320px;
-  min-height: 320px;
+#frontpage-siderbar .widget-inside {
+  height: 385px;
+  min-height: 385px;
+  max-height: 385px;
+}
+#frontpage-siderbar .widget-inside .tab-content {
+  height: 345px;
+  max-height: 345px;
+  min-height: 345px;
   overflow: auto;
 }
 #frontpage-siderbar .tab-pane {
@@ -201,6 +206,8 @@ ul.nav {
 }
 .l1-column.home-layout-option5 .hentry.page,
 .home.home-layout-option5 #content,
+.l1-column.home-layout-option4 .hentry.page,
+.home.home-layout-option4 #content,
 .home.l2-column-sm.l2-column #content,
 .home.l2-column-sm.l2-column.home-layout-option2 #content,
 .home.home-layout-option2 #content,
@@ -944,15 +951,20 @@ ul.thumbnails img {
   /*----------------------------------------- Top Navigation*/
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar {
+  .home-layout-option1 #frontpage-siderbar {
     height: 400px;
     min-height: 400px;
     max-height: 400px;
   }
-  #frontpage-siderbar .tab-content {
-    height: 310px;
-    min-height: 310px;
-    max-height: 310px;
+  .home-layout-option1 #frontpage-siderbar .widget-inside {
+    height: 385px;
+    min-height: 385px;
+    max-height: 385px;
+  }
+  .home-layout-option1 #frontpage-siderbar .widget-inside .tab-content {
+    height: 345x;
+    min-height: 345px;
+    max-height: 345px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
@@ -1035,15 +1047,20 @@ ul.thumbnails img {
   }
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar {
+  .home-layout-option1 #frontpage-siderbar {
     height: 445px;
     min-height: 445px;
     max-height: 445px;
   }
-  #frontpage-siderbar .tab-content {
-    height: 375px;
-    min-height: 375px;
-    max-height: 375px;
+  .home-layout-option1 #frontpage-siderbar .widget-inside {
+    height: 430px;
+    min-height: 430px;
+    max-height: 430px;
+  }
+  .home-layout-option1 #frontpage-siderbar .widget-inside .tab-content {
+    height: 390px;
+    min-height: 390px;
+    max-height: 390px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
@@ -1084,15 +1101,20 @@ ul.thumbnails img {
   /*----------------------------------------- Top Navigation*/
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar {
+  .home-layout-option1 #frontpage-siderbar {
     height: 512px;
     min-height: 512px;
     max-height: 512px;
   }
-  #frontpage-siderbar .tab-content {
-    height: 445px;
-    min-height: 445px;
-    max-height: 445px;
+  .home-layout-option1 #frontpage-siderbar .widget-inside {
+    height: 495px;
+    min-height: 495px;
+    max-height: 495px;
+  }
+  .home-layout-option1 #frontpage-siderbar .widget-inside .tab-content {
+    height: 455px;
+    min-height: 455px;
+    max-height: 455px;
   }
   .home-layout-option2 #frontpage-siderbar .tab-content,
   .home-layout-option3 #frontpage-siderbar .tab-content,
