@@ -1,3 +1,4 @@
+/*Global color changes for header text, links, navigation, and Carousel*/
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #container .hero-unit h1, #frontpage-siderbar .tab-pane a {
  color: #!important;
 }
@@ -9,23 +10,21 @@ menu .nav-collapse .nav > li > a:hover, #ubc7-unit-menu .nav-collapse .dropdown-
 	background: #!important;
         border: 1px solid #;
 }
-#content a[href$='.pdf']:after, #content a[href$='.doc']:after, #content a[href$='.docx']:after {
+/*Commented out style that adds a document icon after every pdf or .docx link*/
+/*#content a[href$='.pdf']:after, #content a[href$='.doc']:after, #content a[href$='.docx']:after {
 font-family: FontAwesome;
 content: "\f0f6";
 padding-left: 7px;
-}
-#content a[href^='mailto:']:after {
-font-family: FontAwesome;
-content: "\f003";
-padding-left: 7px;
-}
+}*/
+/*Branding Color and chevron background link*/
 #dept-brand {
 	background: #;
 }
 #department-logo {
 	background-image: url(/files/2013/04/ogpr-chevron.png);
 }
- @media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+/*Retina Display versions of background and Chevron*/
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
 #container, .content, #frontpage-siderbar {
 	background: url(/files/2013/04/debut_light_@2X.png) repeat !important;
 }
