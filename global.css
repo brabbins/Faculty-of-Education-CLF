@@ -681,38 +681,6 @@ ul.thumbnails img {
     height: 93px;
   }
   /*----------------------------------------- Front Page*/
-  #frontpage-siderbar {
-    margin-top: -63px;
-    background: #FFF;
-    padding: 10px;
-    -webkit-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
-    -moz-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
-    box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
-    position: relative;
-  }
-  #frontpage-siderbar .nav-tabs > li > a,
-  #frontpage-siderbar .nav-pills > li > a {
-    font-size: 85%;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .home .dean-specific {
-    width: 60%;
-  }
-  /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-  .home #content,
-  .home.l2-column-sm.l2-column.home-default #content {
-    margin: -45px 0 0 0;
-    padding: 10px 20px 0 20px;
-  }
-  .home.home-layout-option2 #content {
-    margin: -45px 0 0 0;
-    padding: 10px 20px 0 20px;
-  }
-  #content {
-    margin-top: -45px;
-    padding: 15px 0 0 10px;
-  }
   .home-layout-option2 .hentry,
   .home-layout-option2 .l2-column-ms .hentry,
   .home-layout-option2 .l3-column-msp .hentry,
@@ -739,19 +707,39 @@ ul.thumbnails img {
   .l3-column-msp.home-layout-option2 .hentry.page {
     margin-top: 31px;
   }
-  .l1-column .hentry,
-  .l2-column-ms .hentry,
-  .l3-column-msp .hentry,
-  .l1-column .archive-info,
-  .l2-column-ms .archive-info,
-  .l3-column-msp .archive-info,
-  .l1-column .category-info,
-  .l2-column-ms .category-info,
-  .l3-column-msp .category-info,
-  .l1-column .hentry.page,
-  .l2-column-ms .hentry.page,
-  .l3-column-msp .hentry.page {
-    margin-top: 67px;
+  .home #content,
+  .home.l2-column-sm.l2-column.home-default #content,
+  .home.home-layout-option2 #content {
+    margin: -45px 0 0 0;
+    padding: 10px 20px 0 20px;
+  }
+  #frontpage-siderbar {
+    margin-top: -63px;
+    background: #FFF;
+    padding: 10px;
+    -webkit-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
+    -moz-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
+    box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
+    position: relative;
+  }
+  #frontpage-siderbar .nav-tabs > li > a,
+  #frontpage-siderbar .nav-pills > li > a {
+    font-size: 85%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .home .dean-specific {
+    width: 60%;
+  }
+  /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
+  #content {
+    margin-top: -45px;
+    padding: 15px 0 0 10px;
+  }
+  .l1-column #content,
+  .l2-column-ms #content,
+  .l3-column-msp #content {
+    padding-top: 80px;
   }
   /*----------------------------------------- Sidebar And Secondary Navigation*/
   #primary-secondary,
