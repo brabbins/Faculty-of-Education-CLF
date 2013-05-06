@@ -1,4 +1,3 @@
-/* Edited David Brabbins: Last edit on April 26, 2013 */
 /* Style Sheet Categories */
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
@@ -40,9 +39,6 @@ h1, h2, h3, h4, h5, h6, #ubc7-unit-menu .nav > li > a, #ubc7-unit-alternate-navi
 ul.nav {
 	margin-bottom: 0;
 }
-/*#ubc7-unit-menu .nav > li.active > a, #ubc7-unit-alternate-navigation .nav > li.active > a, #ubc7-unit-menu .nav > li.active > .btn-group, #ubc7-unit-menu .nav > li.active > a:hover, #ubc7-unit-menu .nav-collapse .nav > li > a:hover {
-	color: #FFF;
-}*/
 #ubc7-carousel .carousel-caption, .ubc-carousel .carousel-caption, #ubc7-carousel-controller, .ubc7-carousel-controller {
 	background: #2F5D7C;
 }
@@ -74,7 +70,7 @@ ul.nav {
 	letter-spacing: 3px;
 }
 #department-logo {
-	position: static;
+	position: relative;
 	margin: 5px 0 0 -10px;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -97,13 +93,54 @@ ul.nav {
 }
 
 /*----------------------------------------- Front Page*/
-.home.home-layout-option2 #content, .home-layout-option2 .l1-column, .home #content {
-	margin: 0;
-	padding: 0;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+body {
+	&.home-layout-option3, &.home-layout-option2, &.home-layout-option5 {
+	
+		#frontpage-siderbar {
+		
+			.widget-inside, .widget-inside .tab-content {
+				height: auto;
+				min-height: 455px;
+				max-height:none;
+				margin-bottom: 30px;
+				overflow: visible;
+				height: auto;
+			}
+		}
+	}
+	
+	&.home-layout-option2, &.home-layout-option5 {
+		
+		#frontpage-siderbar {
+				margin-top: 0;
+				padding: 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				position: static;
+				background: none;
+				
+				.tab-content, .widget-inside {
+				}
+		}
+	}
+
+	&.l1-column, &.l2-column-ms, &.l2-column-sm, &.l3-column-msp, &.l3-column-pms, &.l3-column-psm {
+		
+		&.home-layout-option1, &.home-layout-option2, &.home-layout-option3, &.home-layout-option4, &.home-layout-option5, &.home-default {
+			
+			#content {
+				margin: 0;
+				padding: 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+			}
+		
+		}
+	}
 }
+
 .home .dean-specific {
 	width: auto;
 	word-wrap: break-word !important;
@@ -115,17 +152,7 @@ ul.nav {
 		line-height: 30px;
 	}
 }
-.home .hentry {
-	margin-top: 0;
-}
 #frontpage-siderbar {
-	margin-top: 0;
-	background: #FFF;
-	padding: 0;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	overflow: hidden;
 	
 	.widget-inside {
 		height: 385px;
@@ -141,11 +168,6 @@ ul.nav {
 	
 	}
 	
-	.tab-pane {
-		max-height: auto;
-		min-height: auto;
-		margin-top: 15px;
-	}
 	.nav-tabs>li>a, .nav-pills>li>a {
 		margin-right:1px;
 		font-size: 85%;
@@ -154,36 +176,9 @@ ul.nav {
 		margin-top: 0;
 	}
 }
-.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar .tab-content, .home-layout-option2 #frontpage-siderbar {
-	.tab-content, .tab-pane {
-		min-height: auto!important;
-		max-height: auto!important;
-		overflow: visible;
-	}
-}
-.home-layout-option5 #frontpage-siderbar, .home-layout-option3 #frontpage-sidebar, .home-layout-option2 #frontpage-siderbar {
-	margin-top: 0!important;
-	padding: 0!important;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	position: static;
-	background: none;
-}
-.home-layout-option5 #frontpage-siderbar, .home-layout-option5 #frontpage-siderbar .tab-content, .home-layout-option3 #frontpage-siderbar .tab-content, .home-layout-option2 #frontpage-siderbar .tab-content {
-	overflow: visible!important;
-}
-.l1-column.home-layout-option5 .hentry.page, .home.home-layout-option5 #content, .l1-column.home-layout-option4 .hentry.page, .home.home-layout-option4 #content, .home.l2-column-sm.l2-column #content, .home.l2-column-sm.l2-column.home-layout-option2 #content, .home.home-layout-option2 #content, .home.home-layout-option1 #content, .home.home-layout-option1 .hentry.page {
-	 margin: 0;
-	 padding: 0;
-}
-
 #my-carousel {
 	margin-top: 15px;
 }
-.flexslider {
- margin: 0 0 20px;
- }
 .home #primary-secondary {
 	display: none;
 }
@@ -202,77 +197,56 @@ ul.nav {
 	border-radius: 5px 5px 0 0;	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	
+	.page-title, .entry-title, .archive-title, .category-title {
+		border-bottom: 1px solid #d7e0e7;
+		padding-bottom: 9px;
+		margin: 30px 0 30px 10px;
+	}
 }
-.l1-column .entry-content p:first-child {
+.l1-column {
+	 #content {
+		 h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-title {
+			margin-top: 0px;
+			font-size: 50px;
+			text-shadow: 2px 2px 1px #ffffff, -1px -1px 1px #cccccc;
+			line-height: 1;
+			letter-spacing: -1px;
+		}
+	}
+}
+.l1-column .entry-content > p:first-child {
 	margin-bottom: 20px;
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 30px;
-}
-.l1-column > .hentry {
-	margin-top: 0px;
 }
 .feed-view-blog .hentry, .feed-view-blog h2.entry-title {
 	margin-bottom: 0;
 	font-size: 13px;
 	line-height: 1.6;
 }
-.l1-column #content h1.page-title, .l1-column #content h1.entry-title, .l1-column #content h1.loop-title, .l1-column #content h1.archive-title, .l1-column #content h1.category-title {
-	margin-top: 0px;
-	font-size: 50px;
-	text-shadow: 2px 2px 1px #fff,-1px -1px 1px #ccc;
-	line-height: 1;
-	letter-spacing: -1px;
-}
-h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-title {
- border-bottom: 1px #ccc solid;
- margin-bottom: 30px;
- padding-bottom: 10px;
-}
 .page-header {
 	margin-top: 0;
- h1 {
- margin-top: 0;
-}
+	 h1 {
+		 margin-top: 0;
+	}
 }
 
 /*----------------------------------------- Sidebar And Secondary Navigation*/
 .sidebar select {
   width: 100%;
 }	
-#primary-secondary, .l3-column-pms #primary.sidebar, .l3-column-psm #primary.sidebar {
+#primary-secondary, .l3-column-pms #primary, .l3-column-psm #primary {
 	margin-top: 0;
 }
 .sidenavigation {
 	margin-top: 50px;
 }
-/*.sidenav .single > .opened .ubc7-arrow {
- background-position: -1113px -227px!important;
-}*/
-/*.sidenav .accordion-inner, .sidenav .accordion-inner a:last-child {
-border-bottom: none;
-}
-.sidenav .accordion-inner .accordion-inner a:last-child {
-border-bottom: none;
-}
-.sidenav .accordion-inner .accordion-inner a:first-child {
-border-top: none;
-}
-.sidenav .accordion-inner .accordion-inner a, .sidenav .accordion-inner .accordion-inner .accordion-inner .accordion-inner  a {
-border-bottom: 1px solid #D7E0E7;
-}
-*/
 .sidenavigation .accordion-group .accordion-heading.active, .sidenavigation .accordion-group .accordion-heading.active a, .sidenavigation .accordion-group .accordion-heading.active .accordion-toggle, .accordion.sidenav .single a.opened {
 	background: #2F5D7C;
 	color: #F9F9F9;
 	font-weight: bold;
-}
-/*.sidenavigation .accordion-group .accordion-body .accordion-inner > a {
-	line-height: 1.6;
-}*/
-
-.l2-column-ms #primary-secondary {
-margin-top: 0;
 }
 .sidenav .accordion-group .accordion-inner > a.opened, .sidenav .accordion > a.opened {
 background: #002145;
@@ -473,46 +447,6 @@ color: white!important;
 		color: #fff!important;
 	}
 }
-ul .thumbnail {
-	background: #FFF;
-	padding: 15px;
-	min-height: auto;
-	max-height: auto;
-	border: 1px solid #C3D0DB;
-	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	-moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	
-	img {
-		display: block;
-		clear: both;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-ul.thumbnails {
-
-	li {
-	background: #FFF;
-	padding: 15px;
-	min-height: auto;
-	max-height: auto;
-	border: 1px solid #C3D0DB;
-	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	-moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-	
-	}
-	
-	img {
-		display: block;
-		clear: both;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-}
 .feed-view-calendar {
 	
 	p {
@@ -634,25 +568,12 @@ ul.thumbnails {
 @media(min-width:767px) {
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
-/*#ubc7-unit-menu {
-	.current-page-ancestor .btn-group a.btn, .current-menu-ancestor .btn-group a.btn, .current-menu-parent .btn-group a.btn, .current-page-parent .btn-group a.btn, .current_page_parent .btn-group a.btn, .current_page_ancestor .btn-group a.btn {
-		background: #002145;
-	}
-}
-*/
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 #department-logo {
-	position: absolute;
 	margin: 5px 0 0 -30px;
-	text-indent: 200%;
-	white-space: nowrap;
-	overflow: hidden;
 	width: 220px;
 	height: 115px;
 	background-position: 100%;
-	background-repeat: no-repeat;
-	z-index: 100;
-	zoom: 1;
 	h1 {
 		display: none;
 	}
@@ -664,20 +585,10 @@ ul.thumbnails {
 	}
 }
 /*----------------------------------------- Front Page*/
-.home-layout-option2 , .home-layout-option2 .l2-column-ms, .home-layout-option2 .l3-column-msp, .l1-column.home-layout-option2, .l2-column-ms.home-layout-option2, .l3-column-msp.home-layout-option2  {
-	.hentry, .archive-info, .category-info, .hentry.page {
-	margin-top: 31px;
-	}
-}
-.home #content, .home.l2-column-sm.l2-column.home-default #content, .home.home-layout-option2 #content {
-	margin: -45px 0 0 0;
-	padding: 10px 20px 0 20px;
-}
-
 #frontpage-siderbar {
 	margin-top: -63px;
 	background: #FFF;
-	padding: 10px;
+	padding: 8px;
 	-webkit-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	-moz-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
@@ -695,17 +606,27 @@ ul.thumbnails {
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
 #content {
 	margin-top: -45px;
-	padding: 15px 0 0 10px;
-}
-.l1-column, .l2-column-ms, .l3-column-msp {
-	#content {
-		padding-top: 80px;
+	-webkit-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
+	-moz-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
+	box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
+	
+	.entry-content, #utility-after-content, .navigation-links {
+		padding: 0 10px;
 	}
 }
-
+body.l1-column #content {
+padding-top: 85px;
+}
+body.l2-column-ms #content,
+body.l3-column-msp #content {
+padding-top: 65px;
+}
 /*----------------------------------------- Sidebar And Secondary Navigation*/
-#primary-secondary, .l3-column-pms #primary.sidebar, .l3-column-psm #primary.sidebar {
-	margin-top: 45px;
+body.l2-column-sm #primary-secondary,
+body.l3-column-pms #primary,
+body.l3-column-psm #primary,
+body.l3-column-psm #secondary {
+margin-top: 45px;
 }
 /*----------------------------------------- Featured Images*/
 .featured-images-pages {
@@ -776,16 +697,7 @@ ul.thumbnails {
 }
 
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-#content {
-	margin-top: -45px;
-	padding: 15px 0 0 10px;
-}
-
 /*----------------------------------------- Sidebar And Secondary Navigation*/
-#primary-secondary, .l3-column-pms #primary.sidebar, .l3-column-psm #primary.sidebar {
-	margin-top: 45px;
-}
-
 /*----------------------------------------- Featured Images*/
 .featured-images-pages {
 	max-width: 320px;
@@ -807,10 +719,6 @@ ul.thumbnails {
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 /*----------------------------------------- Front Page*/
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-#content {
-	padding-top: 15px;
-}
-
 /*----------------------------------------- Sidebar And Secondary Navigation*/
 /*----------------------------------------- Featured Images*/
 /*----------------------------------------- Profiles*/
@@ -945,25 +853,10 @@ border-bottom: 1px solid #CCC;
 		
 	}
 }
-.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
-	.tab-content, .tab-pane {
-		min-height: auto!important;
-		max-height: auto!important;
-		overflow: visible!important;
-		height: auto!important;
-	}
-}
 .home .dean-specific p {
 	width: auto;
 }
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-.home-default #content, #content {
-	padding: 15px 15px 15px;
-	-webkit-box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-	-moz-box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-	box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-}
-
 /*----------------------------------------- Sidebar And Secondary Navigation*/
 /*----------------------------------------- Featured Images*/
 /*----------------------------------------- Profiles*/
@@ -977,10 +870,6 @@ border-bottom: 1px solid #CCC;
 	}
 }
 /*----------------------------------------- Special Features- Accordion, Tabs, List Thumbnails and other */
-ul .thumbnail {
-	min-height: 360px;
-	max-height: 360px;
-}
 }
  @media screen and (min-width: 979px) {
 /*----------------------------------------- Primary Styles*/
@@ -1036,14 +925,6 @@ ul .thumbnail {
 		}
 	}
 }
-.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
-	.tab-content, .tab-pane {
-		min-height: auto!important;
-		max-height: auto!important;
-		overflow: visible!important;
-		height: auto!important;
-	}
-}
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
 /*----------------------------------------- Sidebar And Secondary Navigation*/
 /*----------------------------------------- Featured Images*/
@@ -1093,14 +974,6 @@ ul .thumbnail {
 			min-height: 455px;
 			max-height: 455px;
 		}
-	}
-}
-.home-layout-option2 #frontpage-siderbar, .home-layout-option3 #frontpage-siderbar {
-	.tab-content, .tab-pane {
-		min-height: auto!important;
-		max-height: auto!important;
-		overflow: visible!important;
-		height: auto!important;
 	}
 }
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/

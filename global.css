@@ -1,4 +1,3 @@
-/* Edited David Brabbins: Last edit on April 26, 2013 */
 /* Style Sheet Categories */
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
@@ -53,9 +52,6 @@ h6,
 ul.nav {
   margin-bottom: 0;
 }
-/*#ubc7-unit-menu .nav > li.active > a, #ubc7-unit-alternate-navigation .nav > li.active > a, #ubc7-unit-menu .nav > li.active > .btn-group, #ubc7-unit-menu .nav > li.active > a:hover, #ubc7-unit-menu .nav-collapse .nav > li > a:hover {
-	color: #FFF;
-}*/
 #ubc7-carousel .carousel-caption,
 .ubc-carousel .carousel-caption,
 #ubc7-carousel-controller,
@@ -98,7 +94,7 @@ ul.nav {
   letter-spacing: 3px;
 }
 #department-logo {
-  position: static;
+  position: relative;
   margin: 5px 0 0 -10px;
   text-indent: 200%;
   white-space: nowrap;
@@ -120,9 +116,64 @@ ul.nav {
   height: 60px;
 }
 /*----------------------------------------- Front Page*/
-.home.home-layout-option2 #content,
-.home-layout-option2 .l1-column,
-.home #content {
+body.home-layout-option3 #frontpage-siderbar .widget-inside,
+body.home-layout-option2 #frontpage-siderbar .widget-inside,
+body.home-layout-option5 #frontpage-siderbar .widget-inside,
+body.home-layout-option3 #frontpage-siderbar .widget-inside .tab-content,
+body.home-layout-option2 #frontpage-siderbar .widget-inside .tab-content,
+body.home-layout-option5 #frontpage-siderbar .widget-inside .tab-content {
+  min-height: 455px;
+  max-height: none;
+  margin-bottom: 30px;
+  overflow: visible;
+  height: auto;
+}
+body.home-layout-option2 #frontpage-siderbar,
+body.home-layout-option5 #frontpage-siderbar {
+  margin-top: 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  position: static;
+  background: none;
+}
+body.l1-column.home-layout-option1 #content,
+body.l2-column-ms.home-layout-option1 #content,
+body.l2-column-sm.home-layout-option1 #content,
+body.l3-column-msp.home-layout-option1 #content,
+body.l3-column-pms.home-layout-option1 #content,
+body.l3-column-psm.home-layout-option1 #content,
+body.l1-column.home-layout-option2 #content,
+body.l2-column-ms.home-layout-option2 #content,
+body.l2-column-sm.home-layout-option2 #content,
+body.l3-column-msp.home-layout-option2 #content,
+body.l3-column-pms.home-layout-option2 #content,
+body.l3-column-psm.home-layout-option2 #content,
+body.l1-column.home-layout-option3 #content,
+body.l2-column-ms.home-layout-option3 #content,
+body.l2-column-sm.home-layout-option3 #content,
+body.l3-column-msp.home-layout-option3 #content,
+body.l3-column-pms.home-layout-option3 #content,
+body.l3-column-psm.home-layout-option3 #content,
+body.l1-column.home-layout-option4 #content,
+body.l2-column-ms.home-layout-option4 #content,
+body.l2-column-sm.home-layout-option4 #content,
+body.l3-column-msp.home-layout-option4 #content,
+body.l3-column-pms.home-layout-option4 #content,
+body.l3-column-psm.home-layout-option4 #content,
+body.l1-column.home-layout-option5 #content,
+body.l2-column-ms.home-layout-option5 #content,
+body.l2-column-sm.home-layout-option5 #content,
+body.l3-column-msp.home-layout-option5 #content,
+body.l3-column-pms.home-layout-option5 #content,
+body.l3-column-psm.home-layout-option5 #content,
+body.l1-column.home-default #content,
+body.l2-column-ms.home-default #content,
+body.l2-column-sm.home-default #content,
+body.l3-column-msp.home-default #content,
+body.l3-column-pms.home-default #content,
+body.l3-column-psm.home-default #content {
   margin: 0;
   padding: 0;
   -webkit-box-shadow: none;
@@ -139,18 +190,6 @@ ul.nav {
   font-weight: 200;
   line-height: 30px;
 }
-.home .hentry {
-  margin-top: 0;
-}
-#frontpage-siderbar {
-  margin-top: 0;
-  background: #FFF;
-  padding: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  overflow: hidden;
-}
 #frontpage-siderbar .widget-inside {
   height: 385px;
   min-height: 385px;
@@ -162,11 +201,6 @@ ul.nav {
   min-height: 345px;
   overflow: auto;
 }
-#frontpage-siderbar .tab-pane {
-  max-height: auto;
-  min-height: auto;
-  margin-top: 15px;
-}
 #frontpage-siderbar .nav-tabs > li > a,
 #frontpage-siderbar .nav-pills > li > a {
   margin-right: 1px;
@@ -175,52 +209,8 @@ ul.nav {
 #frontpage-siderbar .hentry {
   margin-top: 0;
 }
-.home-layout-option2 #frontpage-siderbar .tab-content,
-.home-layout-option3 #frontpage-siderbar .tab-content,
-.home-layout-option3 #frontpage-siderbar .tab-content .tab-content,
-.home-layout-option2 #frontpage-siderbar .tab-content,
-.home-layout-option2 #frontpage-siderbar .tab-pane,
-.home-layout-option3 #frontpage-siderbar .tab-pane,
-.home-layout-option3 #frontpage-siderbar .tab-content .tab-pane,
-.home-layout-option2 #frontpage-siderbar .tab-pane {
-  min-height: auto!important;
-  max-height: auto!important;
-  overflow: visible;
-}
-.home-layout-option5 #frontpage-siderbar,
-.home-layout-option3 #frontpage-sidebar,
-.home-layout-option2 #frontpage-siderbar {
-  margin-top: 0!important;
-  padding: 0!important;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  position: static;
-  background: none;
-}
-.home-layout-option5 #frontpage-siderbar,
-.home-layout-option5 #frontpage-siderbar .tab-content,
-.home-layout-option3 #frontpage-siderbar .tab-content,
-.home-layout-option2 #frontpage-siderbar .tab-content {
-  overflow: visible!important;
-}
-.l1-column.home-layout-option5 .hentry.page,
-.home.home-layout-option5 #content,
-.l1-column.home-layout-option4 .hentry.page,
-.home.home-layout-option4 #content,
-.home.l2-column-sm.l2-column #content,
-.home.l2-column-sm.l2-column.home-layout-option2 #content,
-.home.home-layout-option2 #content,
-.home.home-layout-option1 #content,
-.home.home-layout-option1 .hentry.page {
-  margin: 0;
-  padding: 0;
-}
 #my-carousel {
   margin-top: 15px;
-}
-.flexslider {
-  margin: 0 0 20px;
 }
 .home #primary-secondary {
   display: none;
@@ -242,20 +232,13 @@ ul.nav {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.l1-column .entry-content p:first-child {
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-}
-.l1-column > .hentry {
-  margin-top: 0px;
-}
-.feed-view-blog .hentry,
-.feed-view-blog h2.entry-title {
-  margin-bottom: 0;
-  font-size: 13px;
-  line-height: 1.6;
+#content .page-title,
+#content .entry-title,
+#content .archive-title,
+#content .category-title {
+  border-bottom: 1px solid #d7e0e7;
+  padding-bottom: 9px;
+  margin: 30px 0 30px 10px;
 }
 .l1-column #content h1.page-title,
 .l1-column #content h1.entry-title,
@@ -268,14 +251,17 @@ ul.nav {
   line-height: 1;
   letter-spacing: -1px;
 }
-h1.page-title,
-h1.entry-title,
-h1.loop-title,
-h1.archive-title,
-h1.category-title {
-  border-bottom: 1px #ccc solid;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
+.l1-column .entry-content > p:first-child {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.feed-view-blog .hentry,
+.feed-view-blog h2.entry-title {
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.6;
 }
 .page-header {
   margin-top: 0;
@@ -288,29 +274,13 @@ h1.category-title {
   width: 100%;
 }
 #primary-secondary,
-.l3-column-pms #primary.sidebar,
-.l3-column-psm #primary.sidebar {
+.l3-column-pms #primary,
+.l3-column-psm #primary {
   margin-top: 0;
 }
 .sidenavigation {
   margin-top: 50px;
 }
-/*.sidenav .single > .opened .ubc7-arrow {
- background-position: -1113px -227px!important;
-}*/
-/*.sidenav .accordion-inner, .sidenav .accordion-inner a:last-child {
-border-bottom: none;
-}
-.sidenav .accordion-inner .accordion-inner a:last-child {
-border-bottom: none;
-}
-.sidenav .accordion-inner .accordion-inner a:first-child {
-border-top: none;
-}
-.sidenav .accordion-inner .accordion-inner a, .sidenav .accordion-inner .accordion-inner .accordion-inner .accordion-inner  a {
-border-bottom: 1px solid #D7E0E7;
-}
-*/
 .sidenavigation .accordion-group .accordion-heading.active,
 .sidenavigation .accordion-group .accordion-heading.active a,
 .sidenavigation .accordion-group .accordion-heading.active .accordion-toggle,
@@ -318,12 +288,6 @@ border-bottom: 1px solid #D7E0E7;
   background: #2F5D7C;
   color: #F9F9F9;
   font-weight: bold;
-}
-/*.sidenavigation .accordion-group .accordion-body .accordion-inner > a {
-	line-height: 1.6;
-}*/
-.l2-column-ms #primary-secondary {
-  margin-top: 0;
 }
 .sidenav .accordion-group .accordion-inner > a.opened,
 .sidenav .accordion > a.opened {
@@ -517,38 +481,6 @@ border-bottom: 1px solid #D7E0E7;
 .accordion .accordion-heading a:active {
   color: #fff!important;
 }
-ul .thumbnail {
-  background: #FFF;
-  padding: 15px;
-  min-height: auto;
-  max-height: auto;
-  border: 1px solid #C3D0DB;
-  -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-  -moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-}
-ul .thumbnail img {
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-}
-ul.thumbnails li {
-  background: #FFF;
-  padding: 15px;
-  min-height: auto;
-  max-height: auto;
-  border: 1px solid #C3D0DB;
-  -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-  -moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.2);
-}
-ul.thumbnails img {
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-}
 .feed-view-calendar p {
   margin: 35px 0 0 0;
 }
@@ -651,25 +583,12 @@ ul.thumbnails img {
 @media (min-width: 767px) {
   /*----------------------------------------- Primary Styles*/
   /*----------------------------------------- Top Navigation*/
-  /*#ubc7-unit-menu {
-  	.current-page-ancestor .btn-group a.btn, .current-menu-ancestor .btn-group a.btn, .current-menu-parent .btn-group a.btn, .current-page-parent .btn-group a.btn, .current_page_parent .btn-group a.btn, .current_page_ancestor .btn-group a.btn {
-  		background: #002145;
-  	}
-  }
-  */
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   #department-logo {
-    position: absolute;
     margin: 5px 0 0 -30px;
-    text-indent: 200%;
-    white-space: nowrap;
-    overflow: hidden;
     width: 220px;
     height: 115px;
     background-position: 100%;
-    background-repeat: no-repeat;
-    z-index: 100;
-    zoom: 1;
   }
   #department-logo h1 {
     display: none;
@@ -681,42 +600,10 @@ ul.thumbnails img {
     height: 93px;
   }
   /*----------------------------------------- Front Page*/
-  .home-layout-option2 .hentry,
-  .home-layout-option2 .l2-column-ms .hentry,
-  .home-layout-option2 .l3-column-msp .hentry,
-  .l1-column.home-layout-option2 .hentry,
-  .l2-column-ms.home-layout-option2 .hentry,
-  .l3-column-msp.home-layout-option2 .hentry,
-  .home-layout-option2 .archive-info,
-  .home-layout-option2 .l2-column-ms .archive-info,
-  .home-layout-option2 .l3-column-msp .archive-info,
-  .l1-column.home-layout-option2 .archive-info,
-  .l2-column-ms.home-layout-option2 .archive-info,
-  .l3-column-msp.home-layout-option2 .archive-info,
-  .home-layout-option2 .category-info,
-  .home-layout-option2 .l2-column-ms .category-info,
-  .home-layout-option2 .l3-column-msp .category-info,
-  .l1-column.home-layout-option2 .category-info,
-  .l2-column-ms.home-layout-option2 .category-info,
-  .l3-column-msp.home-layout-option2 .category-info,
-  .home-layout-option2 .hentry.page,
-  .home-layout-option2 .l2-column-ms .hentry.page,
-  .home-layout-option2 .l3-column-msp .hentry.page,
-  .l1-column.home-layout-option2 .hentry.page,
-  .l2-column-ms.home-layout-option2 .hentry.page,
-  .l3-column-msp.home-layout-option2 .hentry.page {
-    margin-top: 31px;
-  }
-  .home #content,
-  .home.l2-column-sm.l2-column.home-default #content,
-  .home.home-layout-option2 #content {
-    margin: -45px 0 0 0;
-    padding: 10px 20px 0 20px;
-  }
   #frontpage-siderbar {
     margin-top: -63px;
     background: #FFF;
-    padding: 10px;
+    padding: 8px;
     -webkit-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
     -moz-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
     box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
@@ -734,17 +621,27 @@ ul.thumbnails img {
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
   #content {
     margin-top: -45px;
-    padding: 15px 0 0 10px;
+    -webkit-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
+    -moz-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
+    box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
   }
-  .l1-column #content,
-  .l2-column-ms #content,
-  .l3-column-msp #content {
-    padding-top: 80px;
+  #content .entry-content,
+  #content #utility-after-content,
+  #content .navigation-links {
+    padding: 0 10px;
+  }
+  body.l1-column #content {
+    padding-top: 85px;
+  }
+  body.l2-column-ms #content,
+  body.l3-column-msp #content {
+    padding-top: 65px;
   }
   /*----------------------------------------- Sidebar And Secondary Navigation*/
-  #primary-secondary,
-  .l3-column-pms #primary.sidebar,
-  .l3-column-psm #primary.sidebar {
+  body.l2-column-sm #primary-secondary,
+  body.l3-column-pms #primary,
+  body.l3-column-psm #primary,
+  body.l3-column-psm #secondary {
     margin-top: 45px;
   }
   /*----------------------------------------- Featured Images*/
@@ -813,16 +710,7 @@ ul.thumbnails img {
     padding-left: 12px;
   }
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-  #content {
-    margin-top: -45px;
-    padding: 15px 0 0 10px;
-  }
   /*----------------------------------------- Sidebar And Secondary Navigation*/
-  #primary-secondary,
-  .l3-column-pms #primary.sidebar,
-  .l3-column-psm #primary.sidebar {
-    margin-top: 45px;
-  }
   /*----------------------------------------- Featured Images*/
   .featured-images-pages {
     max-width: 320px;
@@ -842,9 +730,6 @@ ul.thumbnails img {
   /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
   /*----------------------------------------- Front Page*/
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-  #content {
-    padding-top: 15px;
-  }
   /*----------------------------------------- Sidebar And Secondary Navigation*/
   /*----------------------------------------- Featured Images*/
   /*----------------------------------------- Profiles*/
@@ -964,26 +849,10 @@ ul.thumbnails img {
     min-height: 345px;
     max-height: 345px;
   }
-  .home-layout-option2 #frontpage-siderbar .tab-content,
-  .home-layout-option3 #frontpage-siderbar .tab-content,
-  .home-layout-option2 #frontpage-siderbar .tab-pane,
-  .home-layout-option3 #frontpage-siderbar .tab-pane {
-    min-height: auto!important;
-    max-height: auto!important;
-    overflow: visible!important;
-    height: auto!important;
-  }
   .home .dean-specific p {
     width: auto;
   }
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
-  .home-default #content,
-  #content {
-    padding: 15px 15px 15px;
-    -webkit-box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-    -moz-box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-    box-shadow: 0px -10px 22px rgba(50, 50, 50, 0.29);
-  }
   /*----------------------------------------- Sidebar And Secondary Navigation*/
   /*----------------------------------------- Featured Images*/
   /*----------------------------------------- Profiles*/
@@ -995,10 +864,6 @@ ul.thumbnails img {
     line-height: 26px;
   }
   /*----------------------------------------- Special Features- Accordion, Tabs, List Thumbnails and other */
-  ul .thumbnail {
-    min-height: 360px;
-    max-height: 360px;
-  }
 }
 @media screen and (min-width: 979px) {
   /*----------------------------------------- Primary Styles*/
@@ -1060,15 +925,6 @@ ul.thumbnails img {
     min-height: 390px;
     max-height: 390px;
   }
-  .home-layout-option2 #frontpage-siderbar .tab-content,
-  .home-layout-option3 #frontpage-siderbar .tab-content,
-  .home-layout-option2 #frontpage-siderbar .tab-pane,
-  .home-layout-option3 #frontpage-siderbar .tab-pane {
-    min-height: auto!important;
-    max-height: auto!important;
-    overflow: visible!important;
-    height: auto!important;
-  }
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
   /*----------------------------------------- Sidebar And Secondary Navigation*/
   /*----------------------------------------- Featured Images*/
@@ -1113,15 +969,6 @@ ul.thumbnails img {
     height: 455px;
     min-height: 455px;
     max-height: 455px;
-  }
-  .home-layout-option2 #frontpage-siderbar .tab-content,
-  .home-layout-option3 #frontpage-siderbar .tab-content,
-  .home-layout-option2 #frontpage-siderbar .tab-pane,
-  .home-layout-option3 #frontpage-siderbar .tab-pane {
-    min-height: auto!important;
-    max-height: auto!important;
-    overflow: visible!important;
-    height: auto!important;
   }
   /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
   /*----------------------------------------- Sidebar And Secondary Navigation*/
