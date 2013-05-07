@@ -126,10 +126,14 @@ body {
 	}
 
 	&.l1-column, &.l2-column-ms, &.l2-column-sm, &.l3-column-msp, &.l3-column-pms, &.l3-column-psm {
+	
+	#content {
+		padding: 20px 0 0;
+	}
 		
 		&.home-layout-option1, &.home-layout-option2, &.home-layout-option3, &.home-layout-option4, &.home-layout-option5, &.home-default {
 			
-			#content {
+			#content, #content .hentry {
 				margin: 0;
 				padding: 0;
 				-webkit-box-shadow: none;
@@ -197,14 +201,29 @@ body {
 	border-radius: 5px 5px 0 0;	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	
+		
 	.page-title, .entry-title, .archive-title, .category-title {
 		border-bottom: 1px solid #d7e0e7;
 		padding-bottom: 9px;
-		margin: 30px 0 30px 10px;
+		margin: 0 0 10px 0;
+	}
+	img.featured-images-pages {
+		margin: 20px;
 	}
 }
+
 .l1-column {
+	 &.home-default {
+	 	#content {
+			h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-title {
+				margin-top: 45px;
+			}
+			
+			img.featured-images-pages {
+				margin: 10px 0 0 0;
+			}
+		}
+	}
 	 #content {
 		 h1.page-title, h1.entry-title, h1.loop-title, h1.archive-title, h1.category-title {
 			margin-top: 0px;
@@ -213,13 +232,26 @@ body {
 			line-height: 1;
 			letter-spacing: -1px;
 		}
+		
+		.featured-images-pages {
+			margin: 20px 20px 0 0;
+		}
 	}
+	
 }
 .l1-column .entry-content > p:first-child {
 	margin-bottom: 20px;
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 30px;
+}
+
+.l2-column-ms, .l3-column-msp {
+	#content {
+		.featured-images-pages {
+			margin: 0 20px 20px;
+		}
+	}
 }
 .feed-view-blog .hentry, .feed-view-blog h2.entry-title {
 	margin-bottom: 0;
@@ -568,6 +600,15 @@ color: white!important;
 @media(min-width:767px) {
 /*----------------------------------------- Primary Styles*/
 /*----------------------------------------- Top Navigation*/
+.bread {
+	display:block;
+	margin: 0 0 5px 10px;
+}
+.l2-column {
+	.bread {
+		padding-top: 10px;
+	}
+}
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 #department-logo {
 	margin: 5px 0 0 -30px;
@@ -606,12 +647,18 @@ color: white!important;
 /*----------------------------------------- Content- Entry Header Styles and Container Styles*/
 #content {
 	margin-top: -45px;
+	padding-top: 30px;
 	-webkit-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	-moz-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	
-	.entry-content, #utility-after-content, .navigation-links {
+	.hentry, #utility-after-content, .navigation-links, .search-info, .loop-meta {
 		padding: 0 10px;
+	}
+	.page-title, .entry-title, .archive-title, .category-title {
+		border-bottom: 1px solid #d7e0e7;
+		padding-bottom: 9px;
+		margin: 0 0 10px 10px;
 	}
 }
 body.l1-column #content {
@@ -619,7 +666,7 @@ padding-top: 85px;
 }
 body.l2-column-ms #content,
 body.l3-column-msp #content {
-padding-top: 65px;
+padding-top: 77px;
 }
 /*----------------------------------------- Sidebar And Secondary Navigation*/
 body.l2-column-sm #primary-secondary,
@@ -634,7 +681,14 @@ margin-top: 45px;
 	max-width: 275px;
 	height: auto;
 }
-
+.l1-column {
+	 #content {
+		.featured-images-pages {
+			margin: -65px 20px 0 0;
+		}
+	}
+	
+}
 /*----------------------------------------- Profiles*/
 /*----------------------------------------- Special Features- Accordion, Tabs, List Thumbnails and other */
 .thumbnails .row-fluid {
