@@ -51,9 +51,6 @@ ul.nav {
 		}
 	}
 }
-.faux-breadcrumbs {
- font-size: 12px;
-}
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 #dept-brand {
 	height: 67px;
@@ -92,7 +89,7 @@ ul.nav {
 	}
 }
 
-/*----------------------------------------- Front Page*/
+/*----------------------------------------- Front Page: Includes homepage sidebars, */
 body {
 	&.home-layout-option3, &.home-layout-option2, &.home-layout-option5 {
 	
@@ -128,7 +125,7 @@ body {
 	&.l1-column, &.l2-column-ms, &.l2-column-sm, &.l3-column-msp, &.l3-column-pms, &.l3-column-psm {
 	
 	#content {
-		padding: 20px 0 0;
+		padding: 20px 20px 0 20px;
 	}
 		
 		&.home-layout-option1, &.home-layout-option2, &.home-layout-option3, &.home-layout-option4, &.home-layout-option5, &.home-default {
@@ -139,6 +136,12 @@ body {
 				-webkit-box-shadow: none;
 				-moz-box-shadow: none;
 				box-shadow: none;
+			}
+			
+			#content .hentry {
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				box-sizing: content-box;
 			}
 		
 		}
@@ -208,7 +211,7 @@ body {
 		margin: 0 0 10px 0;
 	}
 	img.featured-images-pages {
-		margin: 20px;
+		margin: 0 0 20px 20px;
 	}
 }
 
@@ -233,17 +236,18 @@ body {
 			letter-spacing: -1px;
 		}
 		
+		.entry-content > p:first-child {
+			margin-bottom: 20px;
+			font-size: 18px;
+			font-weight: 200;
+			line-height: 30px;
+		}
+		
 		.featured-images-pages {
 			margin: 20px 20px 0 0;
 		}
 	}
 	
-}
-.l1-column .entry-content > p:first-child {
-	margin-bottom: 20px;
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 30px;
 }
 
 .l2-column-ms, .l3-column-msp {
@@ -290,45 +294,50 @@ color: #fff;
 	margin: 0;
 	padding: 0;
 }
-.simple-custom-menu a .current-post-ancestor a, .simple-custom-menu .current-menu-parent a, .simple-custom-menu.current-post-parent a, .simple-custom-menu .active a {
-background: #002145;
-color: white!important;
-}
-.simple-custom-menu.sidenav {
-	border: none;
-	border-bottom: 1px solid #D7E0E7;
-	ul {
-		width: 100%;
-		padding: 0;
-		margin: 0!important;
-		border: 0;
+.simple-custom-menu {
+
+ a .current-post-ancestor a, .current-menu-parent a, &.current-post-parent a, .active a {
+	background: #002145;
+	color: white!important;
 	}
-	.menu-item a {
-		color: #002145;
-		display: block;
-		padding: 8px 16px;
-		text-decoration: none;
-		border-top: solid 1px #D7E0E7;
-		border-right: solid 1px #D7E0E7;
-		border-bottom: none;
-		border-left: solid 1px #D7E0E7;
-		line-height: 24px;
+	
+	&.sidenav {
+		border: none;
+		border-bottom: 1px solid #D7E0E7;
+		ul {
+			width: 100%;
+			padding: 0;
+			margin: 0!important;
+			border: 0;
+		}
+		.menu-item a {
+			color: #002145;
+			display: block;
+			padding: 8px 16px;
+			text-decoration: none;
+			border-top: solid 1px #D7E0E7;
+			border-right: solid 1px #D7E0E7;
+			border-bottom: none;
+			border-left: solid 1px #D7E0E7;
+			line-height: 24px;
+		}
+		.menu-item a:hover {
+			color: #FFF;
+			background: #002145;
+		}
+		.menu-item > a .ubc7-arrow {
+			 float: right;
+			 margin-right: -4px;
+			 margin-top: 2px;
+		}
+		.menu-item a:hover .ubc7-arrow {
+			background-position: -1113px -227px;
+		}
+		.menu-item.active a .ubc7-arrow {
+			background-position: -1113px -227px;
+		}
 	}
-	.menu-item a:hover {
-		color: #FFF;
-		background: #002145;
-	}
-	.menu-item > a .ubc7-arrow {
-		 float: right;
-		 margin-right: -4px;
-		 margin-top: 2px;
-	}
-	.menu-item a:hover .ubc7-arrow {
-		background-position: -1113px -227px;
-	}
-	.menu-item.active a .ubc7-arrow {
-		background-position: -1113px -227px;
-	}
+	
 }
 /*----------------------------------------- Featured Images*/
 .featured-images-pages {
@@ -602,7 +611,7 @@ color: white!important;
 /*----------------------------------------- Top Navigation*/
 .bread {
 	display:block;
-	margin: 0 0 5px 10px;
+	margin: 0 0 5px 0;
 }
 .l2-column {
 	.bread {
@@ -651,15 +660,16 @@ color: white!important;
 	-webkit-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	-moz-box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
 	box-shadow: 0 -10px 22px rgba(50,50,50,0.29);
-	
-	.hentry, #utility-after-content, .navigation-links, .search-info, .loop-meta {
-		padding: 0 10px;
-	}
+			
 	.page-title, .entry-title, .archive-title, .category-title {
 		border-bottom: 1px solid #d7e0e7;
 		padding-bottom: 9px;
-		margin: 0 0 10px 10px;
+		margin: 0 0 10px 0;
 	}
+}
+
+.taxonomy-category #content .hentry {
+	padding: 0;
 }
 body.l1-column #content {
 padding-top: 85px;
@@ -684,7 +694,7 @@ margin-top: 45px;
 .l1-column {
 	 #content {
 		.featured-images-pages {
-			margin: -65px 20px 0 0;
+			margin: -65px 0px 15px 15px;
 		}
 	}
 	

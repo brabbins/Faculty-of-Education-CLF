@@ -75,9 +75,6 @@ ul.nav {
 #ubc7-unit-menu .current_page_ancestor:hover {
   color: #FFF;
 }
-.faux-breadcrumbs {
-  font-size: 12px;
-}
 /*----------------------------------------- Individual Branding- Unit Logo, Unit Banner  */
 #dept-brand {
   height: 67px;
@@ -115,7 +112,7 @@ ul.nav {
   width: 220px;
   height: 60px;
 }
-/*----------------------------------------- Front Page*/
+/*----------------------------------------- Front Page: Includes homepage sidebars, */
 body.home-layout-option3 #frontpage-siderbar .widget-inside,
 body.home-layout-option2 #frontpage-siderbar .widget-inside,
 body.home-layout-option5 #frontpage-siderbar .widget-inside,
@@ -144,7 +141,7 @@ body.l2-column-sm #content,
 body.l3-column-msp #content,
 body.l3-column-pms #content,
 body.l3-column-psm #content {
-  padding: 20px 0 0;
+  padding: 20px 20px 0 20px;
 }
 body.l1-column.home-layout-option1 #content,
 body.l2-column-ms.home-layout-option1 #content,
@@ -224,6 +221,46 @@ body.l3-column-psm.home-default #content .hentry {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+body.l1-column.home-layout-option1 #content .hentry,
+body.l2-column-ms.home-layout-option1 #content .hentry,
+body.l2-column-sm.home-layout-option1 #content .hentry,
+body.l3-column-msp.home-layout-option1 #content .hentry,
+body.l3-column-pms.home-layout-option1 #content .hentry,
+body.l3-column-psm.home-layout-option1 #content .hentry,
+body.l1-column.home-layout-option2 #content .hentry,
+body.l2-column-ms.home-layout-option2 #content .hentry,
+body.l2-column-sm.home-layout-option2 #content .hentry,
+body.l3-column-msp.home-layout-option2 #content .hentry,
+body.l3-column-pms.home-layout-option2 #content .hentry,
+body.l3-column-psm.home-layout-option2 #content .hentry,
+body.l1-column.home-layout-option3 #content .hentry,
+body.l2-column-ms.home-layout-option3 #content .hentry,
+body.l2-column-sm.home-layout-option3 #content .hentry,
+body.l3-column-msp.home-layout-option3 #content .hentry,
+body.l3-column-pms.home-layout-option3 #content .hentry,
+body.l3-column-psm.home-layout-option3 #content .hentry,
+body.l1-column.home-layout-option4 #content .hentry,
+body.l2-column-ms.home-layout-option4 #content .hentry,
+body.l2-column-sm.home-layout-option4 #content .hentry,
+body.l3-column-msp.home-layout-option4 #content .hentry,
+body.l3-column-pms.home-layout-option4 #content .hentry,
+body.l3-column-psm.home-layout-option4 #content .hentry,
+body.l1-column.home-layout-option5 #content .hentry,
+body.l2-column-ms.home-layout-option5 #content .hentry,
+body.l2-column-sm.home-layout-option5 #content .hentry,
+body.l3-column-msp.home-layout-option5 #content .hentry,
+body.l3-column-pms.home-layout-option5 #content .hentry,
+body.l3-column-psm.home-layout-option5 #content .hentry,
+body.l1-column.home-default #content .hentry,
+body.l2-column-ms.home-default #content .hentry,
+body.l2-column-sm.home-default #content .hentry,
+body.l3-column-msp.home-default #content .hentry,
+body.l3-column-pms.home-default #content .hentry,
+body.l3-column-psm.home-default #content .hentry {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
 .home .dean-specific {
   width: auto;
   word-wrap: break-word !important;
@@ -285,7 +322,7 @@ body.l3-column-psm.home-default #content .hentry {
   margin: 0 0 10px 0;
 }
 #content img.featured-images-pages {
-  margin: 20px;
+  margin: 0 0 20px 20px;
 }
 .l1-column.home-default #content h1.page-title,
 .l1-column.home-default #content h1.entry-title,
@@ -308,14 +345,14 @@ body.l3-column-psm.home-default #content .hentry {
   line-height: 1;
   letter-spacing: -1px;
 }
-.l1-column #content .featured-images-pages {
-  margin: 20px 20px 0 0;
-}
-.l1-column .entry-content > p:first-child {
+.l1-column #content .entry-content > p:first-child {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
+}
+.l1-column #content .featured-images-pages {
+  margin: 20px 20px 0 0;
 }
 .l2-column-ms #content .featured-images-pages,
 .l3-column-msp #content .featured-images-pages {
@@ -649,7 +686,7 @@ body.l3-column-psm.home-default #content .hentry {
   /*----------------------------------------- Top Navigation*/
   .bread {
     display: block;
-    margin: 0 0 5px 10px;
+    margin: 0 0 5px 0;
   }
   .l2-column .bread {
     padding-top: 10px;
@@ -697,20 +734,16 @@ body.l3-column-psm.home-default #content .hentry {
     -moz-box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
     box-shadow: 0 -10px 22px rgba(50, 50, 50, 0.29);
   }
-  #content .hentry,
-  #content #utility-after-content,
-  #content .navigation-links,
-  #content .search-info,
-  #content .loop-meta {
-    padding: 0 10px;
-  }
   #content .page-title,
   #content .entry-title,
   #content .archive-title,
   #content .category-title {
     border-bottom: 1px solid #d7e0e7;
     padding-bottom: 9px;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 0;
+  }
+  .taxonomy-category #content .hentry {
+    padding: 0;
   }
   body.l1-column #content {
     padding-top: 85px;
@@ -733,7 +766,7 @@ body.l3-column-psm.home-default #content .hentry {
     height: auto;
   }
   .l1-column #content .featured-images-pages {
-    margin: -65px 20px 0 0;
+    margin: -65px 0px 15px 15px;
   }
   /*----------------------------------------- Profiles*/
   /*----------------------------------------- Special Features- Accordion, Tabs, List Thumbnails and other */
